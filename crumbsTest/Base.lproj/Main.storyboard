@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf3-I0-cGN">
-                                <rect key="frame" x="0.0" y="38" width="600" height="326"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="326"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="TDo-vD-gml"/>
                                 </connections>
@@ -25,6 +25,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="kf3-I0-cGN" id="mgk-dr-S58"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

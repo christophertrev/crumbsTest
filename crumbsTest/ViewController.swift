@@ -12,12 +12,11 @@ import CoreLocation;
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
+    @IBOutlet weak var map: MKMapView!
     
     override func viewDidLoad() {
         
-        
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+                // Do any additional setup after loading the view, typically from a nib.
 //        userLocation 
         // Ask for Authorisation from the User.
        
@@ -34,6 +33,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         else{
             println("Location service disabled");
         }
+        
+        
+        let sfGiantsStadiumLocation = CLLocationCoordinate2D(latitude: 37.77831, longitude: -122.38758)
+        //set a span to be used by the MKCoordinateRegion structure
+        var span = MKCoordinateSpanMake(0.01, 0.01)
+        //create MKCoordinateRegion structure
+        var coordinateRegion = MKCoordinateRegion(center: sfGiantsStadiumLocation, span: span)
+        //set the region of the MKMapView object
+        map.setRegion(coordinateRegion, animated: true)
+        
+        //create an MKPointAnnotation object
+        let sfGiantsStadiumAnnotation = MKPointAnnotation()
+        //set properties of the MKPointAnnotation object
+        sfGiantsStadiumAnnotation.setCoordinate(sfGiantsStadiumLocation)
+        sfGiantsStadiumAnnotation.title = "AT & T Park"
+        sfGiantsStadiumAnnotation.subtitle = "Home of the San Francisco Giants"
+        
+        //add the annotation to the map
+        map.addAnnotation(sfGiantsStadiumAnnotation)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +65,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         println("locations = \(locValue.latitude) \(locValue.longitude)")
     }
 
+    class CustomPointAnnotation: MKPointAnnotation {
+        var imageName: String!
+    }
+    
 
+    
 }
+
+
+
 

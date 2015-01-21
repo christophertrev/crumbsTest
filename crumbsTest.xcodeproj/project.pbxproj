@@ -15,6 +15,7 @@
 		4890FCFC1A7058C600AF28A9 /* crumbsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4890FCFB1A7058C600AF28A9 /* crumbsTestTests.swift */; };
 		4890FD061A705CB300AF28A9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4890FD051A705CB300AF28A9 /* MapKit.framework */; };
 		4890FD081A7060CA00AF28A9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4890FD071A7060CA00AF28A9 /* CoreLocation.framework */; };
+		4890FD0A1A70715300AF28A9 /* Map-Marker-Flag-2-Left-Pink-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4890FD091A70715300AF28A9 /* Map-Marker-Flag-2-Left-Pink-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4890FCFB1A7058C600AF28A9 /* crumbsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crumbsTestTests.swift; sourceTree = "<group>"; };
 		4890FD051A705CB300AF28A9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4890FD071A7060CA00AF28A9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4890FD091A70715300AF28A9 /* Map-Marker-Flag-2-Left-Pink-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map-Marker-Flag-2-Left-Pink-icon.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				4890FCE51A7058C600AF28A9 /* AppDelegate.swift */,
 				4890FCE71A7058C600AF28A9 /* ViewController.swift */,
+				4890FD091A70715300AF28A9 /* Map-Marker-Flag-2-Left-Pink-icon.png */,
 				4890FCE91A7058C600AF28A9 /* Main.storyboard */,
 				4890FCEC1A7058C600AF28A9 /* Images.xcassets */,
 				4890FCEE1A7058C600AF28A9 /* LaunchScreen.xib */,
@@ -203,6 +206,7 @@
 				4890FCEB1A7058C600AF28A9 /* Main.storyboard in Resources */,
 				4890FCF01A7058C600AF28A9 /* LaunchScreen.xib in Resources */,
 				4890FCED1A7058C600AF28A9 /* Images.xcassets in Resources */,
+				4890FD0A1A70715300AF28A9 /* Map-Marker-Flag-2-Left-Pink-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
