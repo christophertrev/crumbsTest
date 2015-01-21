@@ -14,6 +14,7 @@
 		4890FCF01A7058C600AF28A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4890FCEE1A7058C600AF28A9 /* LaunchScreen.xib */; };
 		4890FCFC1A7058C600AF28A9 /* crumbsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4890FCFB1A7058C600AF28A9 /* crumbsTestTests.swift */; };
 		4890FD061A705CB300AF28A9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4890FD051A705CB300AF28A9 /* MapKit.framework */; };
+		4890FD081A7060CA00AF28A9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4890FD071A7060CA00AF28A9 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4890FCFA1A7058C600AF28A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4890FCFB1A7058C600AF28A9 /* crumbsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crumbsTestTests.swift; sourceTree = "<group>"; };
 		4890FD051A705CB300AF28A9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4890FD071A7060CA00AF28A9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4890FD081A7060CA00AF28A9 /* CoreLocation.framework in Frameworks */,
 				4890FD061A705CB300AF28A9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		4890FCD71A7058C600AF28A9 = {
 			isa = PBXGroup;
 			children = (
+				4890FD071A7060CA00AF28A9 /* CoreLocation.framework */,
 				4890FD051A705CB300AF28A9 /* MapKit.framework */,
 				4890FCE21A7058C600AF28A9 /* crumbsTest */,
 				4890FCF81A7058C600AF28A9 /* crumbsTestTests */,
