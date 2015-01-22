@@ -33,9 +33,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         else{
             println("Location service disabled");
         }
+//        37.783748,-122.409046
         
-        
-        let sfGiantsStadiumLocation = CLLocationCoordinate2D(latitude: 37.77831, longitude: -122.38758)
+        let sfGiantsStadiumLocation = CLLocationCoordinate2D(latitude: 37.783748, longitude: -122.409046)
         //set a span to be used by the MKCoordinateRegion structure
         var span = MKCoordinateSpanMake(0.01, 0.01)
         //create MKCoordinateRegion structure
@@ -50,8 +50,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         sfGiantsStadiumAnnotation.title = "AT & T Park"
         sfGiantsStadiumAnnotation.subtitle = "Home of the San Francisco Giants"
         
+        //Custom annotation view 
+        var sfGView = MKAnnotationView();
+
         //add the annotation to the map
         map.addAnnotation(sfGiantsStadiumAnnotation)
+        
+        
         
     }
 
@@ -69,6 +74,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         var imageName: String!
     }
     
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        if (annotation is MKUserLocation){
+        //if annotation is not an MKPointAnnotation (eg. MKUserLocation),
+        //return nil so map draws default view for it (eg. blue dot)...
+        return nil
+        }
+    
+    
+    let reuseId = "test"
+    
+    var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId)
+    if anView == nil {
+        anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+        anView.image = UIImage(named:"/Users/christophertrev/Desktop/xCode/crumbsTest/Map-Marker-Flag-2-Left-Pink-icon.png")
+        anView.centerOffset = CGPointMake(0, 00);
+    }
+    else {
+        //we are re-using a view, update its annotation reference...
+        anView.annotation = annotation
+    }
+    
+    return anView
+    }
+
 
     
 }
